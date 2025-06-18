@@ -32,6 +32,7 @@
 
         <main>
             <section id="hero" class="hero-section">
+                
                 <div class="hero-content">
                     <h1>Wir Bauen Ihre Vision.<br>Modern. Zuverlässig. Individuell.</h1>
                     <p>Als Ihr Partner für moderne Bauprojekte realisieren wir Ihre Träume von Grund auf.</p>
@@ -43,22 +44,22 @@
                 <h2>Unsere Leistungen</h2>
                 <div class="service-grid">
                     <div class="service-item">
-                        <img src="https://via.placeholder.com/400x300/222/fff?text=Neubau" alt="Neubau">
+                        <img src="./images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg" alt="Neubau">
                         <h3>Neubau</h3>
                         <p>Von der Konzeption bis zur Schlüsselübergabe – wir realisieren Ihr Traumhaus.</p>
                     </div>
                     <div class="service-item">
-                        <img src="https://via.placeholder.com/400x300/222/fff?text=Umbau+%26+Sanierung" alt="Umbau & Sanierung">
+                        <img src="./images/residential-house-process-building.jpg" alt="Umbau & Sanierung">
                         <h3>Umbau & Sanierung</h3>
                         <p>Wir bringen alte Gebäude auf den neuesten Stand und schaffen neue Räume.</p>
                     </div>
                     <div class="service-item">
-                        <img src="https://via.placeholder.com/400x300/222/fff?text=Gewerbebau" alt="Gewerbebau">
+                        <img src="./images/buildings-205986_640.jpg" alt="Gewerbebau">
                         <h3>Gewerbebau</h3>
                         <p>Effiziente und funktionale Lösungen für Ihr Geschäft oder Ihre Industrieanlage.</p>
                     </div>
                     <div class="service-item">
-                        <img src="https://via.placeholder.com/400x300/222/fff?text=Projektentwicklung" alt="Projektentwicklung">
+                        <img src="./images/conversation-engineers.jpg" alt="Projektentwicklung">
                         <h3>Projektentwicklung</h3>
                         <p>Wir begleiten Sie von der ersten Idee bis zur finalen Umsetzung Ihres Projekts.</p>
                     </div>
@@ -114,9 +115,9 @@
                     <div class="contact-grid">
                         <div class="contact-info">
                             <h3>Direkter Kontakt</h3>
-                            <a href="tel:+491725213227"><i class="fas fa-phone-alt"></i> +49 (0) 172 521 32 27</a>
+                            <a href="tel:+491725213227"><i class="fas fa-phone-alt"></i> +49 (0) 172 521 32 27</a> 
                             <a href="mailto:info@gedikli-dl.de?subject=Anfrage von Ihrer Webseite"><i class="fas fa-envelope"></i> INFO@GEDIKLI-DL.DE</a>
-                            <p><i class="fas fa-map-marker-alt"></i> Bohnekamp Straße 34, 45966 Gladbeck</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Bohnekamp Straße 34, <br> 45966 Gladbeck</p>
                             <div class="social-icons">
                                 <a href="https://www.instagram.com/gediklidienstleistungen?igsh=MXdwdjU4bGszanQ2bA==" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
@@ -148,7 +149,7 @@
 
             <div class="container">
                 <div class="footer-col logo-col">
-                    <h3>Ihr Bauunternehmen</h3>
+                    <img src="./images/Logo Weiss Png.png" alt="Gedikli Dienstleitsungen Logo">
                     <p>Ihr zuverlässiger Partner für innovative und qualitätsvolle Bauprojekte.</p>
                 </div>
                 <div class="footer-col nav-col">
@@ -163,10 +164,20 @@
                 </div>
                 <div class="footer-col contact-col">
                     <h3>Kontakt</h3>
-                    <p>Bohnekamp Straße 34<br>45966 Gladbeck</p>
-                    <p>Telefon: +49 (0) 172 521 32 27<br>E-Mail:
-                        <a href="mailto:info@gedikli-dl.de?subject=Anfrage von Ihrer Webseite"><i class="fas fa-envelope"></i> INFO@GEDIKLI-DL.DE</a>
-                    </p>
+                    <ul>
+                        <li>
+                            <p>Bohnekamp Straße 34<br>45966 Gladbeck</p>
+                        </li>
+                        <li>
+                            <a href="tel:+491725213227">+49 (0) 172 521 32 27</a>
+                        </li>
+                        <li>
+                            <a class="email" href="mailto:info@gedikli-dl.de?subject=Anfrage von Ihrer Webseite">
+                                <i class="fas fa-envelope"></i> INFO@GEDIKLI-DL.DE
+                            </a>
+                        </li>
+                    </ul>
+                    
                 </div>
                 <div class="footer-col legal-col">
                     <h3>Rechtliches</h3>
@@ -189,6 +200,24 @@
         </footer>
 
         <script src="https://kit.fontawesome.com/3c5c346bdf.js" crossorigin="anonymous"></script>
+
+        <!-- Nach oben Button -->
+        <button class="nachObenBtn" id="nachObenBtn">
+          ↑
+        </button>
+
+        <script>
+        // Button anzeigen, wenn gescrollt wird
+        window.onscroll = function() {
+          document.getElementById('nachObenBtn').style.display =
+            (window.pageYOffset > 200) ? 'block' : 'none';
+        };
+
+        // Nach oben scrollen beim Klick
+        document.getElementById('nachObenBtn').onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        </script>
 
     </body>
 </html>
