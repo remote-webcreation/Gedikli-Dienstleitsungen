@@ -27,6 +27,7 @@
                 <div class="header-contact">
                     <a href="#kontakt" class="btn btn-secondary">Angebot anfordern</a>
                 </div>
+                <div class="hamburger" id="hamburger">&#9776;</div>
             </div>
         </header>
 
@@ -69,7 +70,7 @@
                 <div class="container">
                     <div class="about-content">
                         <h2>Über Uns</h2>
-                        <p>Wir sind Ihr erfahrener Baupartner mit einer Leidenschaft für Qualität und innovative Lösungen. Seit unserer Gründung im Jahr XXXX haben wir zahlreiche Projekte erfolgreich abgeschlossen und uns einen Ruf für Präzision, Zuverlässigkeit und Termintreue erarbeitet.</p>
+                        <p>Wir sind Ihr erfahrener Baupartner mit einer Leidenschaft für Qualität und innovative Lösungen. Seit unserer Gründung im Jahr 2020 haben wir zahlreiche Projekte erfolgreich abgeschlossen und uns einen Ruf für Präzision, Zuverlässigkeit und Termintreue erarbeitet.</p>
                         <p>Unser Team aus erfahrenen Architekten, Ingenieuren und Fachkräften arbeitet eng zusammen, um Ihre Visionen Realität werden zu lassen. Wir legen Wert auf transparente Kommunikation, nachhaltige Bauweisen und eine hohe Kundenzufriedenheit.</p>
                         <a href="#kontakt" class="btn btn-primary">Mehr erfahren</a>
                     </div>
@@ -207,16 +208,23 @@
         </button>
 
         <script>
-        // Button anzeigen, wenn gescrollt wird
-        window.onscroll = function() {
-          document.getElementById('nachObenBtn').style.display =
-            (window.pageYOffset > 200) ? 'block' : 'none';
-        };
-
-        // Nach oben scrollen beim Klick
-        document.getElementById('nachObenBtn').onclick = function() {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
+            // Button anzeigen, wenn gescrollt wird
+            window.onscroll = function() {
+              document.getElementById('nachObenBtn').style.display =
+                (window.pageYOffset > 200) ? 'block' : 'none';
+            };
+        
+            // Nach oben scrollen beim Klick
+            document.getElementById('nachObenBtn').onclick = function() {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+            // Hamburger Menu
+            const hamburger = document.getElementById('hamburger');
+            const navUl = document.querySelector('.main-nav ul');
+                
+            hamburger.addEventListener('click', () => {
+              navUl.classList.toggle('active');
+            });
         </script>
 
     </body>
